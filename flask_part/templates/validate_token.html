@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Here you can validate token</h1>
+
+{% if messages %}
+<p>{{ messages }}</p>
+{% endif %}
+
+<form method="post">
+    <br>
+    <label>
+        <textarea name="token"
+                  placeholder="Token content"
+                  rows="15"
+                  cols="60"
+        ></textarea>
+    </label>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
+
